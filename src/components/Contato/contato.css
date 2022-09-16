@@ -1,0 +1,85 @@
+.container.contacto_container{
+    width:58%;
+    display: grid;
+    grid-template-columns: 30% 58%;    
+    gap: 12%;
+}
+
+.contacto_options {
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+
+}
+.contato_opcoes {
+ 
+    background: var(--color-bg-variant);
+    padding:1.2 rem;
+    border-radius:1.2rem;
+    text-align:center;
+    border:1px solid transparent;
+    transition: var(--transition);
+
+
+
+}
+
+.contato_opcoes:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant)
+
+}
+.contact_option-icon {
+    font-size:1.5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.contacto_options a {
+    margin-top:0.7rem;
+    display: inline-block;
+    font-size: 0.rem;
+
+
+}
+
+  /*====================================================FORMULARIO====================================================================*/
+form{
+display: flex;
+flex-direction: column;
+gap:1.2rem;
+}
+
+input, textarea{
+width: 100%;
+padding: 1.5rem;
+border-radius: 0.5rem;
+background: transparent;
+border: 2px solid var(--color-primary-variant);
+resize: nome;
+color: var(--color-white);
+
+}
+
+  /*====================================================MEDIA QUERIES(DEVICES)====================================================================*/
+  @media screen and (max-width:1024px) {
+
+    .container.contacto_container {
+        grid-template-columns: 1fr;
+        gap:2rem;
+
+      
+
+  }
+}
+  
+  
+  /*====================================================MEDIA QUERIES(SMALL DEVICES)====================================================================*/
+  @media screen and(max-width:600px) {
+
+    .container.contacto_container {
+        width:var(--container-width-sm) ;
+    }
+
+  };
+
